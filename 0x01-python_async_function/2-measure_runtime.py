@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""""""
+"""calculates the time needed for each coroutine to be executed """
 import time
 import asyncio
 
