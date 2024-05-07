@@ -5,11 +5,11 @@ The coroutine will loop 10 times, each time asynchronously wait 1 second,
 then yield a random number between 0 and 10. Use the random module."""
 
 import asyncio
-from typing import Any, AsyncGenerator
+from typing import AsyncGenerator, Generator
 import random
 
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     """a generator from 0 to 9 randomly"""
     for i in range(0, 10):
         await asyncio.sleep(1)
