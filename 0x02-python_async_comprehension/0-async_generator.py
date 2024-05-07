@@ -9,8 +9,7 @@ from typing import Any, AsyncGenerator
 import random
 
 
-# -> AsyncGenerator[int, None, None]
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator():
     """a generator from 0 to 9 randomly"""
     for i in range(0, 10):
         await asyncio.sleep(1)
